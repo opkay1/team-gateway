@@ -24,6 +24,10 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path= /myOrders/**
+        - id: Myproduct
+          uri: http://localhost:8085
+          predicates:
+            - Path= /myproducts/**    
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -59,6 +63,10 @@ spring:
           uri: http://Information:8080
           predicates:
             - Path= /myOrders/**
+        - id: Myproduct
+          uri: http://Information:8080
+          predicates:
+            - Path= /myproducts/**
       globalcors:
         corsConfigurations:
           '[/**]':
